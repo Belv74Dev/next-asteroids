@@ -6,7 +6,7 @@ import { AsteroidWithAllDatesTypes } from '@/types/types'
 import { useContext, useEffect, useState } from 'react'
 
 const fetchData = async (id: string) => {
-  const res = await fetch(`api/asteroids/${id}`)
+  const res = await fetch(`${process.env.HOST}/api/asteroids/${id}`)
   return await res.json()
 }
 

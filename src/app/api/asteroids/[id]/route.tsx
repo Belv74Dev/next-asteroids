@@ -13,6 +13,7 @@ export async function GET(
   },
 ) {
   const id = context.params.id
+  console.log('id', id)
   const res = await fetch(`https://api.nasa.gov/neo/rest/v1/neo/${id}?api_key=${api_key}`)
   const data = await res.json()
 
