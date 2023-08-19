@@ -1,0 +1,21 @@
+.container {
+  padding: 16px;
+}
+
+.main {
+  width: 279px;
+  margin: 17px auto 17px;
+}
+
+@media (min-width: 1023.99px) {
+ .main {
+    width: 400px;
+    margin: 0 auto 17px calc(50% - 450px);
+  } 
+}
+
+@media (min-width: 1354.99px) {
+  .main {
+    margin: 0 auto 17px calc(50% - 600px);
+  }
+}

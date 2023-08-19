@@ -1,0 +1,7 @@
+{
+  "extends": "next",
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"]
+  }
+}

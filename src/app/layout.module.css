@@ -1,0 +1,61 @@
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.wrapper {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.planet {
+  flex: 0 0 48px;
+  top: 115px;
+  width: 48px;
+  height: 436px;
+  position: sticky;
+}
+
+.planet::before {
+  content: "";
+  background: url('/imgs/planeta_zemlia_sm.png') no-repeat top right / auto 100%;
+  width: 48px;
+  height: 436px;
+}
+
+.planet::before {
+  display: block;
+  width: 48px;
+  height: 436px;
+}
+
+@media (min-width: 1023.99px) {
+  .wrapper {
+    position: relative;
+    margin: 15px 0 0;
+  }
+  .planet {
+    top: 84px;
+    width: 304px;
+    flex: 0 0 304px;
+  }
+  .planet::before {
+    background: url('/imgs/planeta_zemlia_md.png') no-repeat top right / auto 100%;
+    width: 304px;
+    height: 436px;
+  }
+}
+
+@media (min-width: 1354.99px) {
+  .planet {
+    top: 84px;
+    width: 400px;
+    flex: 0 0 400px;
+  }
+  .planet::before {
+    background: url('/imgs/planeta_zemlia_xl.png') no-repeat top right / auto 100%;
+    width: 400px;
+    height: 620px;
+  }}

@@ -1,0 +1,15 @@
+.header {
+
+}
+
+.header_logo {
+  font-family: var(--font-passion-one);
+  color: var(--color-orange);
+  font-size: 32px;
+}
+
+.header_description {
+  margin: 8px 0 0;
+  color: var(--color-white);
+  font-size: 16px;
+}

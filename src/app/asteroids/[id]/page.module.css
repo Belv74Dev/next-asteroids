@@ -1,0 +1,21 @@
+.all_dates {
+  margin: 24px 0 0;
+}
+
+.all_dates_list {
+  padding: 0 0 0 20px;
+}
+
+.all_dates_item {
+  margin: 12px 0 0;
+}
+
+.all_dates_info {
+  padding: 0 0 0 10px;
+}
+
+.all_dates_info_item {
+  display: flex;
+  gap: 8xp;
+  margin: 4px 0 0;
+}

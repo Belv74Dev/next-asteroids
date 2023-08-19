@@ -1,0 +1,85 @@
+.asteroid {
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.asteroid_content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.asteroid_date {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px; 
+}
+.asteroid_distance {}
+.asteroid_distance_value {
+  font-size: 16px;
+  line-height: 24px;
+}
+.asteroid_distance_icon {
+  display: flex;
+  align-items: center;
+  margin: 3px -5px;
+}
+.asteroid_distance_icon > span {
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--color-while-smooth);
+}
+.asteroid_distance_icon::before,
+.asteroid_distance_icon::after {
+  content: "";
+  display: block;
+  border: 5px solid transparent;
+
+}
+.asteroid_distance_icon::before {
+  border-right: 6px solid var(--color-while-smooth); 
+}
+.asteroid_distance_icon::after {
+  border-left: 6px solid var(--color-while-smooth); 
+}
+.asteroid_img {
+  position: relative;
+  width: 22px;
+  height: 24px;
+}
+.asteroid_img__big {
+  width: 36.6px;
+  height: 40px;
+}
+.asteroid_object {
+  color: var(--color-white);
+}
+.asteroid_name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.asteroid_diameter {
+  display: block;
+  font-size: 12px;
+  line-height: 16px;
+}
+.asteroid_additionally {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.asteroid_warning {
+  display: flex;
+  gap: 4px;
+  color: var(--color-gray-smooth);
+  font-size: 14px;
+  font-weight: 400;
+}
+.asteroid_warning_icon {
+  font-size: 14px;
+}
+.asteroid_warning_text {
+  line-height: 20px;
+}

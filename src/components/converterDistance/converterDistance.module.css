@@ -1,0 +1,26 @@
+.converter {
+  display: flex;
+  gap: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 8px 0 0;
+}
+
+.converter_variant {
+  font-weight: 400;
+  cursor: pointer; 
+}
+
+.converter_variant:hover {
+  text-decoration: underline;
+}
+
+.converter_variant.converter_variant__active {
+  font-weight: 700;
+  cursor: default; 
+}
+
+.converter_variant.converter_variant__active:hover{
+  text-decoration: none;
+}
