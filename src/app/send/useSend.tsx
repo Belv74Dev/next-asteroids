@@ -7,7 +7,7 @@ import { useContext, useEffect, useState } from 'react'
 
 const getAsteroidsItem = async (send: string[]) => {
   const asteroids = send.map(id => 
-    fetch(`${process.env.HOST}/api/asteroids/${id}`)
+    fetch(`${process.env.NEXT_PUBLIC_HOST}/api/asteroids/${id}`)
       .then(res => res.json())
   )
 

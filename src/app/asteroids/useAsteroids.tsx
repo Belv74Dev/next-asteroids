@@ -6,7 +6,7 @@ import { AsteroidType } from '@/types/types'
 import { useContext, useEffect, useRef, useState } from 'react'
 
 const fetchData = async (page: number) => {
-  const res = await fetch(`${process.env.HOST}/api/asteroids?page=${page}`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/asteroids?page=${page}`)
   return await res.json()
 }
 
